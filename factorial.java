@@ -33,7 +33,8 @@ public class Factorial {
 	     } 
 	     catch(Exception err)
 	     {
-	     	System.out.println("Se espera un numero y escribio otra cosa, little bitch chupapijas");
+	     	System.out.println("Se espera un numero y escribio otra cosa, little bitch chupapijas"):
+	     	
 	     }
     }
 } 
