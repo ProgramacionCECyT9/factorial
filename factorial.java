@@ -1,28 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-package factorial;
-
-
- import java.util.Scanner; 
+import java.util.Scanner; 
 
 public class Factorial {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
          Scanner s =new Scanner(System.in); 
-         int suma=1; 
+         int suma=1;
+         int error = 0; 
+         int n = 0;
          System.out.println("Ingrese un numero"); 
-         int n=s.nextInt(); 
+         try
+         {
+         	n = s.nextInt();
 
-         for(int i=n;i>1;i--){ 
-         suma=suma*i; 
-         } 
-         System.out.println("El factorial de "+n+" es "+suma); 
-         } 
-    } 
+         	if(n >= 17)
+	         {
+	        	System.out.println("Solo puede ser un numero menor a 17, escribe otro");
+	        	n = s.nextInt();
+	         }
+	         else
+	         {	         	
+	         }
+
+	         for(int i = n; i > 1; i--)
+	         	{ 
+		        	suma = suma * i; 
+		        } 
+		        
+		        System.out.println("El factorial de "+n+" es "+suma); 
+
+         	
+	     } 
+	     catch(Exception err)
+	     {
+	     	System.out.println("Se espera un numero y escribio otra cosa, little bitch chupapijas");
+	     }
+    }
+} 
